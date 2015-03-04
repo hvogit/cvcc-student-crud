@@ -21,6 +21,4 @@ This is Cinglevue Code Challenge - A single page web app using following technol
 
 ## Screenshots
 ![list](https://github.com/hvogit/cvcc-student-crud/raw/master/src/main/webapp/images/list.png)
-![detail](https://github.com/hvogit/cvcc-student-crud/raw/master/src/main/webapp/images/detail.png)
-
-https://github.com/hvogit/cvcc-student-crud/raw/master/src/main/webapp/images/details.png
+![detail](https://github.com/hvogit/cvcc-student-crud/raw/master/src/main/webapp/images/details.png)
