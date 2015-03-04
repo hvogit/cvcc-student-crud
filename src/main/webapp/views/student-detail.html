@@ -1,0 +1,33 @@
+<div ng-controller="studentDetailCtrl">
+	<h2 ng-if="editMode">Student Details</h2>
+	<h2 ng-if="!editMode">Create New Student</h2>
+
+	<label>Student Number</label>
+	<input type="text" ng-model="student.studentNumber"/>
+	<br>
+	<label>First Name</label>
+	<input type="text" ng-model="student.firstName"/>
+	<br>
+	<label>Last Name</label>
+	<input type="text" ng-model="student.lastName"/>
+	<br>
+	<label>Email</label>
+	<input type="email" ng-model="student.email"/>
+	<br>
+	<label>Gender</label>
+	<input type="text" ng-model="student.gender"/>
+	<br>
+	<!-- Date field is still not working yet
+	<label>Birthday</label>
+	<input type="date" ng-model="student.birthDay"/>
+	<br>
+	-->
+	<label>Disability</label>
+	<input type="checkbox" ng-model="student.disability"/>
+	<br>
+	<br>
+	<label></label>
+	<button ng-click="save()">{{saved ? 'Saved! ...' : 'Save'}}</button>
+	<button ng-click="cancel()">Cancel</button>
+</div>
+

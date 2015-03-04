@@ -1,0 +1,23 @@
+<h2>Students List</h2>
+<div ng-controller="studentListCtrl">
+	<table>
+		<tr class="header-row red">
+			<td class="col1">StudentNo.</td>
+			<td class="col2">First Name</td>
+			<td class="col3">Last Name</td>
+			<td>
+				<button ng-click="add()">+ New</button>
+			</td>
+		</tr>
+		<tr ng-repeat="student in students">
+			<td>{{student.studentNumber}}</td>
+			<td>{{student.firstName}}</td>
+			<td>{{student.lastName}}</td>
+			<td>
+				<button ng-click="edit(student)">Edit</button>
+				<button ng-click="delete(student)">Delete</button>
+			</td>
+		</tr>
+	</table>
+
+</div>

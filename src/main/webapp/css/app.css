@@ -1,0 +1,20 @@
+tr.header-row td {
+  border-bottom: 1px solid lightgray;
+  color: darkgray;
+}
+.col1 {
+	width: 100px;
+}
+.col2, .col3 {
+	width: 150px;
+}
+
+label {
+	display: inline-block;
+	width: 110px;
+	text-align: right;
+	margin: 5px 10px;
+}
+input {
+	width: 220px;
+}
