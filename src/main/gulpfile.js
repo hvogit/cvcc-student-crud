@@ -1,5 +1,3 @@
-// this is to rapid develop front end without backend server
-
 var gulp = require('gulp'),
 		livereload = require('gulp-livereload');
 
@@ -14,9 +12,7 @@ function startExpress() {
 
 gulp.task('default', function() {
 	startExpress();
-
 	livereload.listen();
-
 	gulp.watch('webapp/**/*.*').on('change', function(event) {
 		console.log('File ' + event.path + ' was ' + event.type + ', reloading ...');
 		gulp.src(event.path).pipe(livereload());
