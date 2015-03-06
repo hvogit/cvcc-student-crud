@@ -1,7 +1,7 @@
 # cvcc-student-crud
 
 ## Introduction
-This is Cinglevue Code Challenge - A single page web app using following technologies:
+This is Cinglevue Coding Challenge - A single page web app using following technologies:
 
 - **AngularJS** - MV* framework
 - **Spring MVC** - Serves static contents and exposes REST apis
