@@ -3,6 +3,7 @@
     "express": "^4.11",
     "gulp-watch": "*",
     "gulp-livereload": "*",
+    "gulp-load-plugins": "*",
     "gulp": "*"
   }
 }

@@ -1,5 +1,5 @@
 var gulp = require('gulp'),
-		livereload = require('gulp-livereload');
+		plugins = require('gulp-load-plugins')();
 
 function startExpress() {
 	var express = require('express');
@@ -12,10 +12,11 @@ function startExpress() {
 
 gulp.task('default', function() {
 	startExpress();
-	livereload.listen();
+	plugins.livereload.listen();
+
 	gulp.watch('webapp/**/*.*').on('change', function(event) {
 		console.log('File ' + event.path + ' was ' + event.type + ', reloading ...');
-		gulp.src(event.path).pipe(livereload());
+		gulp.src(event.path).pipe(plugins.livereload());
 	});
 });
 
