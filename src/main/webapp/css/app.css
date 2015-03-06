@@ -1,3 +1,4 @@
+/* list form format */
 tr.header-row td {
   border-bottom: 1px solid lightgray;
   color: darkgray;
@@ -9,6 +10,7 @@ tr.header-row td {
 	width: 150px;
 }
 
+/* details form format */
 label {
 	display: inline-block;
 	width: 110px;
@@ -17,4 +19,24 @@ label {
 }
 input {
 	width: 220px;
+}
+
+/* animation on deleting row */
+.row {
+	transition: all linear .5s;
+}
+.row.ng-leave-active {
+	opacity: 0;
+}
+
+/* animation on view switching */
+.container {
+	position: absolute;
+	transition: all linear .5s;
+}
+.container.ng-enter, .container.ng-leave-active {
+	left: -100%;
+}
+.container.ng-enter-active, .container.ng-leave {
+	left: 0;
 }

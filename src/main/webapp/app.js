@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('cvccApp', ['ngRoute'])
+angular.module('cvccApp', ['ngRoute', 'ngAnimate'])
 .constant('Configs', {
 	API_URL: 'http://localhost:8080/api'
 })
